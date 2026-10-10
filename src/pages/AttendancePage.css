@@ -1,0 +1,150 @@
+/* Toàn bộ trang */
+body {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Tiêu đề chính */
+h1 {
+  background-color: #004d99; /* nền xanh đậm */
+  color: #ffcc00; /* chữ vàng */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Khu vực nhập liệu */
+label {
+  font-weight: 600;
+  color: #004d99;
+}
+
+input[type="date"],
+input[type="text"] {
+  border: 2px solid #004d99;
+  border-radius: 8px;
+  padding: 8px 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="date"]:focus,
+input[type="text"]:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 5px #ffcc00;
+}
+
+/* Bảng danh sách sinh viên (DataGridView) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px; /* giảm khoảng cách trên */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ô tiêu đề và nội dung */
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px 8px; /* giảm padding để bảng gọn hơn */
+  text-align: center;
+  font-size: 13px; /* giảm cỡ chữ */
+  white-space: nowrap; /* tránh xuống dòng */
+}
+
+/* Tiêu đề bảng */
+th {
+  background-color: #004d99;
+  color: white;
+  font-weight: bold;
+  font-size: 14px; /* giữ tiêu đề hơi lớn hơn nội dung */
+}
+
+/* Dòng xen kẽ */
+tr:nth-child(even) {
+  background-color: #eef5ff;
+}
+
+/* Hiệu ứng hover */
+tr:hover {
+  background-color: #d9eaff;
+  transition: 0.2s;
+}
+
+/* Nút lệnh */
+button {
+  background-color: #e0e0e0;
+  color: #004d99;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px; /* giảm kích thước nút */
+  font-size: 12px; /* chữ nhỏ hơn */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #cfcfcf;
+  color: #002b5c;
+  transform: scale(1.03);
+}
+
+/* Nút lưu điểm danh */
+button.bg-blue-600 {
+  background-color: #004d99 !important;
+  color: #ffcc00 !important;
+  border-radius: 10px;
+  padding: 6px 14px;
+  font-size: 13px;
+  box-shadow: 0 3px 6px rgba(0, 77, 153, 0.3);
+}
+
+button.bg-blue-600:hover {
+  background-color: #003366 !important;
+  color: #fff !important;
+}
+.status-select {
+  border: 2px solid #004d99;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #004d99;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.status-select:hover {
+  background-color: #eef5ff;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0 0 5px #ffcc00;
+}
+
+/* Màu theo trạng thái */
+.status-green {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-yellow {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-red {
+  background-color: #f8d7da;
+  color: #721c24;
+}
